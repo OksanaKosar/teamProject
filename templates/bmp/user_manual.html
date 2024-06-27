@@ -1,0 +1,105 @@
+{% extends 'bmp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+    <div class="text-center">
+        <h1 class="mb-4">User Manual</h1>
+        <p>This application is designed to provide a comprehensive suite of tools for working with BMP files. Here, you'll find all the information you need to get started and make the most of the application's features.</p>
+    </div>
+
+    <div class="text-left mt-5">
+        <h3 id="getting-started" class="mt-4">1. Getting Started</h3>
+        <p>To begin using the application, start with LogIn.</p>
+
+        <h3 id="main-interface-overview" class="mt-4">2. Toolbar</h3>
+        <p>The toolbar is designed for ease of use and consists of the following sections:</p>
+        <ul>
+            <li><strong>About:</strong> Displays information about author and program</li>
+            <li><strong>Crypt:</strong> Access different functions such as embedding messages and extract a message.</li>
+            <li><strong>History:</strong> Displays history</li>
+            <li><strong>Create BMP:</strong> Create a beautiful combination </li>
+        </ul>
+
+        <h3 id="selecting-creating-bmp" class="mt-4">3. Selecting and Creating BMP Files</h3>
+        <h4>Selecting a BMP File</h4>
+        <ul>
+            <li>Click on <strong>File</strong> in the menu bar.</li>
+            <li>Select <strong>Open</strong> to bring up the system file dialog.</li>
+            <li>Navigate to the desired BMP file and click <strong>Open</strong>.</li>
+        </ul>
+        <h4>Creating a New BMP File</h4>
+        <ul>
+            <li>After opening an existing BMP file, go to <strong>File > Create New</strong>.</li>
+            <li>Choose one of the three available construction algorithms and one of the three color schemes from the provided options.</li>
+            <li>Click <strong>Create</strong> to generate a new BMP file based on the selected parameters.</li>
+            <li>Save the new file by selecting <strong>File > Save As</strong> and choosing a location and filename.</li>
+        </ul>
+        <img src="{% static 'about/ex3.jpg' %}" alt="ex Photo" class="img-fluid mr-4" style="width: auto; height: 150px;">
+
+        <h3 id="embedding-messages" class="mt-4">4. Embedding Hidden Messages</h3>
+        <h4>Steps to Embed a Message</h4>
+        <ul>
+            <li>Click on <strong>Crypt</strong> in the menu bar and select <strong>Hide message</strong>.</li>
+            <li>Open the BMP file you wish to embed a message into by selecting <strong>File > Open</strong>.</li>
+            <li>Enter the message you want to embed in the provided text box.</li>
+            <li>Click <strong>Hide message</strong> to insert the message into the BMP file.</li>
+            <li>Save the modified BMP file by pressing <strong>Download</strong>.</li>
+        </ul>
+        <img src="{% static 'about/ex1.jpg' %}" alt="ex Photo" class="img-fluid mr-4" style="width: auto; height: 150px;">
+
+        <h3 id="extracting-messages" class="mt-4">5. Extracting Hidden Messages</h3>
+        <h4>Steps to Extract a Message</h4>
+        <ul>
+            <li>Click on <strong>Crypt</strong> in the menu bar and select <strong>Extract Message</strong>.</li>
+            <li>Open the BMP file that contains a hidden message by selecting <strong>File > Open</strong>.</li>
+            <li>The hidden message will be displayed in a text box.</li>
+        </ul>
+        <img src="{% static 'about/ex2.jpg' %}" alt="ex Photo" class="img-fluid mr-4" style="width: auto; height: 150px;">
+
+        <h3 id="user-authorization" class="mt-4">6. User Authorization</h3>
+        <h4>Logging In</h4>
+        <ul>
+            <li>Click on <strong>Log In</strong> in the menu bar</li>
+            <li>Enter your username and password in the provided fields.</li>
+            <li>Click <strong>Log In</strong> to access your saved settings and files.</li>
+        </ul>
+        <h4>Creating an Account</h4>
+        <ul>
+            <li>Click on <strong>Register</strong> in the menu bar.</li>
+            <li>Fill in the required details and click <strong>Create</strong>.</li>
+        </ul>
+
+        <h3 id="managing-history" class="mt-4">7. Managing Activity History</h3>
+        <p>For authorized users, the application keeps track of:</p>
+        <ul>
+            <li>The last three BMP files you worked on.</li>
+            <li>The modes of creating new bitmaps you used.</li>
+            <li>The messages you embedded or extracted.</li>
+        </ul>
+        <h4>Accessing History</h4>
+        <ul>
+            <li>Click on <strong>User</strong> in the menu bar.</li>
+            <li>Select <strong>History</strong> to view your recent activity.</li>
+            <li>Choose an item from the list to load it.</li>
+        </ul>
+
+        <h3 id="deauthorization" class="mt-4">8. Deauthorization</h3>
+        <h4>To log out from the application:</h4>
+        <ul>
+            <li>Click on <strong>Log Out</strong> in the menu bar.</li>
+            <li>Your current settings will be saved, and you can log back in to resume your work.</li>
+        </ul>
+
+        <h3 id="additional-information" class="mt-4">9. Additional Information</h3>
+        <ul>
+            <li><strong>User Manual:</strong> For detailed explanations of all features, go to <strong>About > User Manual</strong>.</li>
+            <li><strong>About the Program:</strong> To learn more about the application, its capabilities, and purpose, go to <strong>About > About the Program</strong>.</li>
+            <li><strong>About the Authors:</strong> For information about the developers of this application, go to <strong>About > About the Authors</strong>.</li>
+        </ul>
+    </div>
+    <div class="text-center mt-5">
+        <p>Thank you for using our PixelCrypt! We hope it enhances your work with BMP files. If you have any questions or need further assistance.</p>
+    </div>
+</div>
+{% endblock %}

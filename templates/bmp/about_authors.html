@@ -1,0 +1,63 @@
+{% extends 'bmp/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5 text-center">
+        <h1 class="text-center mb-4">About the authors</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 mb-4">
+                <div class="card author-card">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="{% static 'about/andrii.jpg' %}" alt="Author Photo" class="img-fluid mr-4"
+                             style="width: 150px; height: auto;">
+                        <div class="text-left" style="flex: 1;">
+                            <h5 class="card-title mt-3">Andrii Berchak</h5>
+                            <p class="card-text">13.04.2004</p>
+                            <p class="card-text">Education: Vasyl Stefanyk Precarpathian National University, Computer
+                                Science</p>
+                            <p class="card-text">Among programming languages, Java impresses me the most. As for myself,
+                                I am a sociable, communicative person and a good team player. I used to work as a
+                                promoter, where I gained experience in communicating with people and teamwork skills. In
+                                my free time, I learn English.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.linkedin.com/in/andrii-berchak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                   class="btn btn-outline-primary mr-2" target="_blank"><i class="bi bi-linkedin"></i>
+                                    LinkedIn</a>
+                                <a href="https://github.com/andriiberchak" class="btn btn-outline-dark" target="_blank">
+                                    <i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-4">
+                <div class="card author-card">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="{% static 'about/oksana.JPG' %}" alt="Author Photo" class="img-fluid mr-4"
+                             style="width: 150px; height: auto;">
+                        <div class="text-left" style="flex: 1;">
+                            <h5 class="card-title mt-3">Kosar Oksana</h5>
+                            <p class="card-text">06.02.2003</p>
+                            <p class="card-text">Education: Vasyl Stefanyk Precarpathian National University, Computer
+                                Science</p>
+                            <p class="card-text">I'm mostly interested in Python, but apart from work I can show myself
+                                from another side. I am fond of tennis and actively do sports, in particular, I am also
+                                a stretching coach. Recently, I have been working as a barista, which allows me to
+                                communicate with different people and enjoy the aromas of freshly brewed coffee.
+                                Communicating with people is what brings me real pleasure.</p>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.linkedin.com/in/oksana-kosar-544396294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                   class="btn btn-outline-primary mr-3" target="_blank"><i class="bi bi-linkedin"></i>
+                                    LinkedIn</a>
+                                <a href="https://github.com/OksanaKosar" class="btn btn-outline-dark ml-5"
+                                   target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

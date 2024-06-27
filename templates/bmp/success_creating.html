@@ -1,0 +1,16 @@
+{% extends 'bmp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5 text-center">
+        <h1>Image successfully created</h1>
+        <p class="lead">Your new BMP image has been successfully created.</p>
+        <div class="mt-4">
+            <img src="{{ bmp_image.res_image.url }}" alt="New BMP Image" class="img-fluid mx-auto d-block"
+                 style="width: 30%; height: 30%;">
+        </div>
+        <div class="mt-4">
+            <a href="{{ bmp_image.res_image.url }}" download class="btn btn-success btn-lg mr-2">Download Image</a>
+            <a href="{% url 'create_bmp' %}" class="btn btn-primary btn-lg mr-2">Create another BMP</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'bmp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5 text-center">
+        <h1>Message successfully hidden</h1>
+        <p class="lead">Your message has been successfully hidden in a BMP image.</p>
+        <div class="mt-4">
+            <img src="{{ bmp_image.res_image.url }}" alt="BMP Image with Hidden Message"
+                 class="img-fluid mx-auto d-block" style="width: 30%; height: 30%;">
+        </div>
+        <div class="mt-4">
+            <a href="{{ bmp_image.res_image.url }}" download class="btn btn-success btn-lg mr-2">Download Image</a>
+            <a href="{% url 'embed_message' %}" class="btn btn-primary btn-lg mr-2">Hide another message</a>
+            <a href="{% url 'extract_message' %}" class="btn btn-secondary btn-lg">Extract message from BMP image</a>
+        </div>
+    </div>
+{% endblock %}
